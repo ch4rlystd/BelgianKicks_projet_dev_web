@@ -324,18 +324,19 @@ main {
     background-color: #333;
 }
 
-/* Styles pour la section des conseils d'entretien */
+/* Espacement accru pour le titre */
+.tips-title {
+    margin-bottom: 60px; /* Augmenté pour un espacement plus prononcé */
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Section des conseils */
 .tips-section {
     text-align: center;
     padding: 60px 20px;
     background-color: white;
     color: black;
-}
-
-.tips-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-
 }
 
 .tips-section p {
@@ -347,7 +348,6 @@ main {
     font-size: 1.8em;
     margin-top: 40px;
     margin-bottom: 20px;
-    
 }
 
 .tips-container {
@@ -373,6 +373,7 @@ main {
     border-radius: 15px;
 }
 
+/* Produits */
 .products-container {
     display: flex;
     flex-wrap: wrap;
@@ -417,7 +418,8 @@ main {
     font-weight: bold;
 }
 
-.product button {
+.product a.btn {
+    display: inline-block;
     background-color: red;
     color: white;
     padding: 10px 20px;
@@ -427,9 +429,11 @@ main {
     margin-top: 10px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
 }
 
-.product button:hover {
+.product a.btn:hover {
     background-color: darkred;
 }
 
@@ -451,4 +455,76 @@ main {
     .tips-container .image {
         margin: 10px 0;
     }
+}
+
+/* Additional styles for the "À propos" page */
+.hero-about .hero-background {
+    background-image: url('image/Couverture-44.jpg'); /* Remplacez par votre image de fond */
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+}
+
+.hero-content-left {
+    text-align: left;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: black;
+}
+
+.testimonial-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.testimonial-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.core-value {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: gray;
+}
+
+.testimonial-image {
+    flex: 1;
+    max-width: 500px;
+    text-align: right;
+}
+
+.testimonial-image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Presentation Section */
+.presentation {
+    padding: 60px 20px;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.presentation h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.presentation p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
